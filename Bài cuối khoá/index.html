@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="btn-rs" onclick="reset()">Reset</button>
+    <div class="main">
+        <div>
+            <input type="text" id="hex">
+            <input type="color" id="color">
+        </div>
 
-    <button id="btn" onclick="changecolor()">Change Color</button>
+        <div class="btn">
+            <button class="item" onclick="reset()">Reset</button>
 
-    <div>
-        <input type="text" id="hex">
-        <input type="color" id="color">
+            <button class="item" onclick="changecolor()">Change Color</button>
+
+            <button class="item" onclick="copy()">Copy</button>
+        </div>
     </div>
-
-    <button onclick="copy()">Copy</button>
 
     <script src="color.js"></script>
 </body>
