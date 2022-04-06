@@ -12,7 +12,11 @@
         <div class="header"><h2>Forum Bóng Đá - Đăng Nhập</h2></div>
         <div class="main">
             <input class="control" name="email" type="email" placeholder="E-mail">
+            <span id="email_err" class="error"></span>
+
             <input class="control" name="password" type="password" placeholder="Password">
+            <span id="password_err" class="error"></span>
+
             <div class="checkbox">
                 <input name="remember" type="checkbox" value="Remember Me">Nhớ tài khoản
             </div>
@@ -23,5 +27,7 @@
 
         <p>Bạn chưa có tài khoản? <a href="add.html">Đăng Kí</a> </p>
     </form>
+
+    <script src="login.js"></script>
 </body>
 </html>
